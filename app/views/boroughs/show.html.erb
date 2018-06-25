@@ -1,0 +1,8 @@
+<h1>Borough: <%= @borough.name %></h1>
+
+<h3>List of neighborhoods:</h3>
+<ul>
+  <% @borough.neighborhoods.each do |neighborhood| %>
+    <li><%= link_to neighborhood.name, neighborhood %></li>
+  <% end %>
+</ul>

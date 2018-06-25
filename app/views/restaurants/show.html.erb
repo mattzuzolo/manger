@@ -1,0 +1,15 @@
+<h1>Restaurant: <%= @restaurant.name %></h1>
+<h2>Located in: <%= link_to @restaurant.neighborhood.name, neighborhood_path(@restaurant.neighborhood) %></h5>
+<h3>Borough: <%= link_to @restaurant.neighborhood.borough.name, borough_path(@restaurant.neighborhood.borough) %></h3>
+
+<hr>
+
+
+<h3>Restaurant details:</h3>
+
+<h5>Yelp page: <a href="<%= @restaurant.url %>">Click here!</a> </h5>
+<h5>Price: <%= @restaurant.price %></h5>
+<h5>Rating: <%= @restaurant.rating %></h5>
+<h5>Review count: <%= @restaurant.review_count %></h5>
+<h5>Type of cuisine: <%= @restaurant.demonym %></h5>
+<h5>Country of origin: <%= @restaurant.origin_nation %></h5>

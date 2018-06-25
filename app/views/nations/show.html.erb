@@ -1,0 +1,7 @@
+<h1>Restaurants in NYC from: <%= @nation.name %></h1>
+
+<ul>
+  <% @nation.restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurant %></li>
+  <% end %>
+</ul>

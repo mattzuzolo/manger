@@ -1,0 +1,30 @@
+<h1>restaurant new page</h1>
+
+<%= form_for @restaurant do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %><br><br>
+
+  <%= f.label :yelp_page %>
+  <%= f.text_field :yelp_page %><br><br>
+
+  <%= f.label :price %>
+  <%= f.text_field :price %><br><br>
+
+  <%= f.label :rating %>
+  <%= f.text_field :rating %><br><br>
+
+  <%= f.label :review_count %>
+  <%= f.text_field :review_count %><br><br>
+
+  <%= f.label :demonym %>
+  <%= f.text_field :demonym %><br><br>
+
+  <%= f.label :nation_id %>
+  <%= f.text_field :nation_id %><br><br>
+
+  <%= f.label :neighborhood_id %>
+  <%= f.text_field :neighborhood_id %><br><br>
+
+  <%= f.submit %>
+<% end %>

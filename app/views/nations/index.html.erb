@@ -1,0 +1,7 @@
+<h1>Country index page</h1>
+
+<ul>
+  <% @nations.each do |nation| %>
+    <li><%= link_to nation.name, nation %></li>
+  <% end %>
+</ul>

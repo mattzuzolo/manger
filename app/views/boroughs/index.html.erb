@@ -1,0 +1,7 @@
+<h1>Borough index:</h1>
+
+<ul>
+  <% @boroughs.each do |borough| %>
+    <li><%= link_to borough.name, borough %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,7 @@
+<h1>Continent: <%= @continent.name %></h1>
+
+<ul>
+  <% @continent.nations.each do |nation| %>
+    <li><%= link_to nation.name, nation %></li>
+  <% end %>
+</ul>
