@@ -5,3 +5,20 @@
     <li><%= link_to restaurant.name, restaurant %></li>
   <% end %>
 </ul>
+
+
+
+<hr>
+
+<h1>Pizza:</h1>
+
+<ul>
+  <% @pizzas.each do |pizza| %>
+  <%# byebug %>
+    <li> <%= pizza[1][1][:name] %> </li>
+  <% end %>
+</ul>
+
+
+<!-- pizza[1][1].class return hash -->
+<!-- pizza[1][3]["name"] return string of name. Second index selects restaurant. Returns string-->

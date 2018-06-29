@@ -27,6 +27,10 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'countries'
 gem 'yelp', require: 'yelp'
+gem "json"
+gem "http"
+# gem "optparse"
+gem 'OptionParser', '~> 0.5.1'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
